@@ -1,0 +1,6 @@
+CREATE TABLE orders (
+    id SERIAL PRIMARY KEY,
+    item VARCHAR(255) NOT NULL,
+    quantity INT NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE
+)

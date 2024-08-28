@@ -1,0 +1,6 @@
+CREATE TABLE outbox(
+    id SERIAL PRIMARY KEY,
+    payload VARCHAR(255) NOT NULL,
+    processed BOOLEAN NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE
+)
